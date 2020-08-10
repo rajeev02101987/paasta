@@ -1,7 +1,6 @@
 dist: xenial
 arch:
   - arm64
-  - amd64
 language: python
 cache:
   pip: true

@@ -25,6 +25,7 @@ env:
 services:
   - docker
 before_install:
+  - sudo apt-get install -y docker-ce
   # This probably ought to match the version in yelp_package/dockerfiles/itest/mesos/Dockerfile.
   # Having a recent enough version is important so that docker features like --cpu-shares work properly.
   - sudo bash -c 'echo "deb http://repos.mesosphere.com/ubuntu xenial main" > /etc/apt/sources.list.d/mesosphere.list'

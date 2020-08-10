@@ -44,7 +44,7 @@ build_%_docker:
 
 .SECONDEXPANSION:
 itest_%: package_$$* bintray_$$*
-	$(DOCKER_RUN) /work/yelp_package/itest/ubuntu.sh paasta-tools_$(ACTUAL_PACKAGE_VERSION)_amd64.deb
+	$(DOCKER_RUN) /work/yelp_package/itest/ubuntu.sh paasta-tools_$(ACTUAL_PACKAGE_VERSION)_arm64.deb
 
 package_%: build_$$*_docker
 	# Copy these files to .old before maybe clobbering them

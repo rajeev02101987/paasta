@@ -1,9 +1,7 @@
 dist: xenial
-branches:
-  only:
-    - master
-    - /^v[0-9.]+$/
-    - /^travis-ci-.*$/
+arch:
+  - arm64
+  - amd64
 language: python
 cache:
   pip: true
